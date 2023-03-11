@@ -1,0 +1,26 @@
+{
+    "name": "home_master_server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "setup": "npm install && cd client && npm install && cd ..",
+        "build-run": "cd client && npm run build && cd .. && nodemon server.js",
+        "start": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "connect-mongo": "^4.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "mongodb": "^3.6.5",
+        "mongoose": "^5.12.1",
+        "nodemon": "^2.0.15",
+        "validator": "^13.5.2"
+    }
+}
